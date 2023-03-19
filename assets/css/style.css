@@ -33,6 +33,38 @@ hr{
     background-color: white;
 }
 
+/* navbar css */
+.navbar{
+   width: 80%;
+   margin-left: 170px;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li{
+    list-style: none;
+    font-size: 30px;
+    color: grey;
+    padding: 50px 20px;
+    text-transform: uppercase;
+}
+.navbar ul .active{
+   width: 50px;
+   height: 20px;
+    
+}
+
+.navbar ul li:hover{
+    color: white;
+    cursor: pointer;
+}
+
+
+
+
+
+
 /* media query for header */
 /* for 980px screen */
 @media screen and (max-width:980px) {
@@ -53,7 +85,81 @@ hr{
     .header h2{
         font-size: 30px;
     }
- 
-   
+}
 
+
+/* navbar media query */
+@media screen and  (max-width:1700px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+    
+}
+@media screen and  (max-width:1230px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+    .navbar ul{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+    }
+}
+
+@media screen and  (max-width:1230px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+    .navbar ul{
+        display: grid;
+        grid-template-columns: auto auto auto auto auto ;
+    }
+    .navbar ul li{
+        padding: 20px;
+    }
+}
+@media screen and  (max-width:772px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+    .navbar ul{
+        display: grid;
+        grid-template-columns: auto auto auto ;
+    }
+}
+.navbar ul li{
+    font-size: 30px;
+padding: 10px;
+
+}
+@media screen and  (max-width:700px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+    .navbar ul{
+        display: grid;
+        grid-template-columns: auto auto  ;
+    }
+    .navbar ul li{
+        font-size: 30px;
+ padding: 20px;
+    }
+}
+@media screen and  (max-width:502px){
+    .navbar{
+        width: 100%;
+        margin: 0;
+    }
+    .navbar ul{
+        display: grid;
+        grid-template-columns: auto auto  ;
+    }
+    .navbar ul li{
+        font-size: 20px;
+ padding: 20px;
+    }
 }
