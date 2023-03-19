@@ -1,0 +1,59 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background-color: black;
+}
+/* header css */
+.header{
+  padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.header h1{
+    text-transform: uppercase;
+    color: white;
+    font-size: 50px;
+    padding: 20px 0px;
+}
+.header h2{
+    color: grey;
+    text-align: center;
+    font-size: 50px;
+    padding: 20px 20px;
+    cursor:pointer;
+
+}
+
+/* hr css */
+hr{
+    height: 2.5px;
+    background-color: white;
+}
+
+/* media query for header */
+/* for 980px screen */
+@media screen and (max-width:980px) {
+    .header{
+        display: block;
+        text-align: center;
+    }
+}
+/* for 410 px screen */
+@media screen and (max-width:410px) {
+    .header{
+        display: block;
+        text-align: center;
+    }
+    .header h1{
+        font-size: 30px;
+    }
+    .header h2{
+        font-size: 30px;
+    }
+ 
+   
+
+}
