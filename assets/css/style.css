@@ -19,7 +19,7 @@ body{
     padding: 20px 0px;
 }
 .header h2{
-    color: grey;
+    color: rgb(68, 67, 67);
     text-align: center;
     font-size: 50px;
     padding: 20px 20px;
@@ -41,12 +41,13 @@ hr{
 .navbar ul{
     display: flex;
     justify-content: center;
+    padding: 40px 0px 90px 0px;
 }
 .navbar ul li{
     list-style: none;
     font-size: 30px;
-    color: grey;
-    padding: 50px 20px;
+    color: rgb(68, 67, 67);
+    padding:  20px;
     text-transform: uppercase;
 }
 .navbar ul .active{
@@ -60,20 +61,63 @@ hr{
     cursor: pointer;
 }
 
+/* main section css */
+.main {
+    background-image: url("../images/body\ images.jpg");
+    padding: 2px;
+    width: 100%;
+
+    background-size: cover;
+   
+   
+}
+.main .heading{
+
+    font-size: 50px;
+    color: white;
+    text-align: left;
+    margin-top: 200px;
+    padding: 50px 0px 0px 80px;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+}
+.main .heading-1{
+    width: 50%;
+    font-size: 60px;
+    color: white;
+    text-align: left;
+    padding: 50px 0px 0px 80px;
+    text-transform: capitalize;
+    font-weight: bold;
+
+}
+
+.main .para{
+    width: 50%;
+    font-size: 30px;
+    color: white;
+    line-height: 50px;
+    padding: 50px 0px 0px 80px;
+    text-transform: capitalize;
+}
+
+
+
+
+
 
 
 
 
 
 /* media query for header */
-/* for 980px screen */
 @media screen and (max-width:980px) {
     .header{
         display: block;
         text-align: center;
     }
 }
-/* for 410 px screen */
 @media screen and (max-width:410px) {
     .header{
         display: block;
@@ -161,5 +205,63 @@ padding: 10px;
     .navbar ul li{
         font-size: 20px;
  padding: 20px;
+    }
+}
+/* main dection media query */
+
+@media screen and (max-width:1290px) {
+    .main {
+        background-position: center;
+    }
+}
+
+
+
+@media screen and (max-width:890px) {
+    .main {
+        background-position: center;
+    }
+    .main .heading{
+        font-size: 30px;
+        
+    }
+    .main .heading-1{
+        font-size: 50px;
+        width: 70%;
+    }
+    .main .para{
+        font-size: 20px;
+        width: 60%;
+    }
+    
+}
+@media screen and (max-width:676px) {
+    .main {
+        background-position:center;
+    }
+    .main .heading{
+        font-size: 30px;
+        text-align: left;
+        
+        
+    }
+    .main .heading-1{
+        font-size: 40px;
+        width: 70%;
+        text-align: left;
+      
+    }
+    .main .para{
+        font-size: 20px;
+        width: 60%;
+        text-align: left;
+      
+    }
+    
+}
+@media screen and (max-width:600px) {
+    .main {
+    
+        background-position:calc();
     }
 }
